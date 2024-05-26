@@ -8,29 +8,29 @@ git clone https://github.com/priyaRaghavan-code/string_calculator.git
 
 
 # Create a new instance of the StringCalculator class
-require_relative 'string_calculator'
-calculator = StringCalculator.new
+- require_relative 'string_calculator'
+- calculator = StringCalculator.new
 
 # Adding numbers using default delimiter (comma or newline)
-puts calculator.add("1,2,3")  # Output: 6
-puts calculator.add("1\n2,3")  # Output: 6
+- puts calculator.add("1,2,3")  # Output: 6
+- puts calculator.add("1\n2,3")  # Output: 6
 
 # Adding numbers with custom delimiter
-puts calculator.add("//;\n1;2;3")  # Output: 6
-puts calculator.add("//|\n1|2|3")  # Output: 6
+- puts calculator.add("//;\n1;2;3")  # Output: 6
+- puts calculator.add("//|\n1|2|3")  # Output: 6
 
 # Handling negatives
-puts calculator.add("1,-2,3")  # Raises an error: "negatives not allowed: -2"
+- puts calculator.add("1,-2,3")  # Raises an error: "negatives not allowed: -2"
 
 # Ignoring large numbers
-puts calculator.add("2,1001")  # Output: 2
+- puts calculator.add("2,1001")  # Output: 2
 
 # Adding numbers with custom delimiters of any length
-puts calculator.add("//[***]\n1***2***3")  # Output: 6
+- puts calculator.add("//[***]\n1***2***3")  # Output: 6
 
 # Adding numbers with multiple delimiters
-puts calculator.add("//[*][%]\n1*2%3")  # Output: 6
-puts calculator.add("//[;][&]\n4;5&6")  # Output: 15
+- puts calculator.add("//[*][%]\n1*2%3")  # Output: 6
+- puts calculator.add("//[;][&]\n4;5&6")  # Output: 15
 
 # Features
 - Supports addition of numbers provided as a string input.
