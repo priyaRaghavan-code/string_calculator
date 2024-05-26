@@ -6,9 +6,9 @@ You can use the String Calculator by either cloning the repository or directly d
 # Clone the repository using below link
 git clone https://github.com/priyaRaghavan-code/string_calculator.git
 
-require_relative 'string_calculator'
 
 # Create a new instance of the StringCalculator class
+require_relative 'string_calculator'
 calculator = StringCalculator.new
 
 # Adding numbers using default delimiter (comma or newline)
